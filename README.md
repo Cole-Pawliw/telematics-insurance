@@ -11,6 +11,8 @@ and the score sets a **discount or surcharge** on their premium.
 The services talk to each other through **RabbitMQ** and store their data in one **Postgres**
 database, with a separate schema and login per service.
 
+This is a project to re-familiarize myself with docker, as well as learning Domain-Driven Design practices. Microservices are used to apply DDD in a convenient way.
+
 ---
 
 ## Run the app
