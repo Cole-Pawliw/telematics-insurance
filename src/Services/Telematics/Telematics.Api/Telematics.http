@@ -1,0 +1,19 @@
+@Telematics_HostAddress = http://localhost:5002
+@PolicyNumber = POL-REPLACEME
+
+### Record a trip (use a policy number returned by the Policy service)
+POST {{Telematics_HostAddress}}/api/trips
+Content-Type: application/json
+
+{
+  "policyNumber": "{{PolicyNumber}}",
+  "startTimeUtc": "2026-11-03T08:00:00Z",
+  "endTimeUtc": "2026-11-03T08:45:00Z",
+  "milesDriven": 25.5,
+  "hardBrakeCount": 1,
+  "rapidAccelerationCount": 0,
+  "maxSpeedMph": 72
+}
+
+### List a policy's trips
+GET {{Telematics_HostAddress}}/api/trips/policy/{{PolicyNumber}}

@@ -1,0 +1,12 @@
+# Docker builds use the repository root as context; keep build output,
+# dependencies and secrets out of the images.
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+.git/
+.vs/
+.vscode/
+.idea/
+.env
+tests/

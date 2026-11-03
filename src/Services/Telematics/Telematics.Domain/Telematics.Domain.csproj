@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Business rules only: no framework or infrastructure dependencies. -->
+
+</Project>

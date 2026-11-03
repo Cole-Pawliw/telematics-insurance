@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Integration event contracts shared by all services. Keep free of framework dependencies. -->
+
+</Project>

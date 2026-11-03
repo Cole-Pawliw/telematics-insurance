@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Contracts\TelematicsInsurance.Contracts.csproj" />
+    <ProjectReference Include="..\Policy.Domain\Policy.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

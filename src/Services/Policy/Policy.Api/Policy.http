@@ -1,0 +1,23 @@
+@Policy_HostAddress = http://localhost:5001
+
+### Create a policy
+POST {{Policy_HostAddress}}/api/policies
+Content-Type: application/json
+
+{
+  "customerName": "Jane Doe",
+  "vin": "1HGCR2F83HA000000",
+  "baseMonthlyRate": 150,
+  "effectiveDateUtc": "{{$datetime iso8601}}"
+}
+
+### Invalid VIN (returns 400 with code "Policy.VinInvalidFormat")
+POST {{Policy_HostAddress}}/api/policies
+Content-Type: application/json
+
+{
+  "customerName": "Jane Doe",
+  "vin": "NOT-A-VIN",
+  "baseMonthlyRate": 150,
+  "effectiveDateUtc": "{{$datetime iso8601}}"
+}

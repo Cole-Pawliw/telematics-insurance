@@ -1,2 +1,5 @@
-# Auto detect text files and perform LF normalization
+# Normalise line endings in the repository
 * text=auto
+
+# Shell scripts run inside Linux containers and break with CRLF
+*.sh text eol=lf

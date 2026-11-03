@@ -1,0 +1,5 @@
+@Billing_HostAddress = http://localhost:5003
+@PolicyNumber = POL-REPLACEME
+
+### List a policy's monthly invoices (newest first)
+GET {{Billing_HostAddress}}/api/billing/policy/{{PolicyNumber}}
